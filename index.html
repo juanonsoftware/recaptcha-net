@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>reCAPTCHA for .NET by tanveery</title>
+    <title>reCAPTCHA for .NET</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -12,19 +12,16 @@
   <body>
     <section class="page-header">
       <h1 class="project-name">reCAPTCHA for .NET</h1>
-      <h2 class="project-tagline">reCAPTCHA for .NET library lets you easily use Google&#39;s reCAPTCHA in an ASP.NET Web Forms or MVC application. It is one of the most well-documented reCAPTCHA libraries with thousands of downloads on Nuget.</h2>
+      <h2 class="project-tagline"><p>reCAPTCHA for .NET is one of the most popular and well-documented reCAPTCHA library used by thousands of developers in their ASP.NET web forms and MVC applications.</h2>
       <a href="https://github.com/tanveery/recaptcha-net" class="btn">View on GitHub</a>
-      <a href="https://github.com/tanveery/recaptcha-net/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/tanveery/recaptcha-net/tarball/master" class="btn">Download .tar.gz</a>
+      <a href="https://github.com/tanveery/recaptcha-net/zipball/master" class="btn">Download Now</a>
     </section>
 
     <section class="main-content">
       <h1>
-<a id="recaptcha-library-for-net" class="anchor" href="#recaptcha-library-for-net" aria-hidden="true"><span class="octicon octicon-link"></span></a>reCAPTCHA library for .NET</h1>
+<a id="recaptcha-library-for-net" class="anchor" href="#recaptcha-library-for-net" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to reCAPTCHA library for .NET</h1>
 
-<p>reCAPTCHA for .NET is one of the most popular and well-documented reCAPTCHA library used by thousands of developers in their ASP.NET web forms and MVC applications.</p>
-
-<p>The library is one of the most solid captcha libraries with the best documentation. Unlike most other reCAPTCHA libraries, it supports both ASP.NET Web Forms and ASP.NET MVC.</p>
+<p>reCAPTCHA for .NET is an open source .NET library that allows developers to easily use Google's reCAPTCHA in ASP.NET web forms and MVC web applications. It is one of the most popular and well-documented reCAPTCHA libraries in the .NET world.</p>
 
 <h2>
 <a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
@@ -242,7 +239,7 @@ if (recaptchaResult != RecaptchaVerificationResult.Success)
     ModelState.AddModelError("", "Incorrect captcha answer.");
 }
 </code></pre>
-
+<p><strong>Note</strong>: The <strong>GetRecaptchaVerificationHelper()</strong> is an extension method to the MVC's built-in <strong>Controller</strong> class. This means you must import the <strong>Recaptcha.Web.Mvc</strong> namespace explicitly at the top of the controller file otherwise the code will not compile.</p>
 <h2 id="keyInWebConfig">
 <a id="how-to-set-recaptcha-key-in-webconfig-file" class="anchor" href="#how-to-set-recaptcha-key-in-webconfig-file" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to Set reCAPTCHA Key in Web.config File</h2>
 
@@ -256,9 +253,7 @@ if (recaptchaResult != RecaptchaVerificationResult.Success)
 &lt;/appSettings&gt;
 </code></pre>
 
-<p>Note: The appSettings keys are automatically added to your web.config file if you install reCAPTCHA for .NET through Nuget. However, you would still need to provide your own public and private keys in the web.config file of your project.</p>
-
-<p><strong>Note</strong>: The <strong>GetRecaptchaVerificationHelper()</strong> is an extension method to the MVC's built-in <strong>Controller</strong> class. This means you must import the <strong>Recaptcha.Web.Mvc</strong> namespace explicitly at the top of the controller file otherwise the code will not compile.</p>
+<p><strong>Note</strong>: The <strong>appSettings</strong> keys are automatically added to your web.config file if you install reCAPTCHA for .NET through Nuget. However, you would still need to provide your own public and private keys in the web.config file of your project.</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/tanveery/recaptcha-net">reCAPTCHA for .NET</a> is maintained by <a href="https://github.com/tanveery">tanveery</a>.</span>
