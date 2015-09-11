@@ -159,11 +159,11 @@ namespace Recaptcha.Web
 
             if (!doUseSsl)
             {
-                sb.Append(String.Format("<script type=\"text/javascript\" src=\"http://www.google.com/recaptcha/api/challenge?k={0}&lang={1}\">", PublicKey, Language));
+                sb.Append(String.Format("<script type=\"text/javascript\" src=\"//www.google.com/recaptcha/api/challenge?k={0}&lang={1}\">", PublicKey, Language));
             }
             else
             {
-                sb.Append(String.Format("<script type=\"text/javascript\" src=\"https://www.google.com/recaptcha/api/challenge?k={0}&lang={1}\">", PublicKey, Language));
+                sb.Append(String.Format("<script type=\"text/javascript\" src=\"//www.google.com/recaptcha/api/challenge?k={0}&lang={1}\">", PublicKey, Language));
             }
 
             sb.Append("</script>");
